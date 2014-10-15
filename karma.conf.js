@@ -17,7 +17,8 @@ module.exports = function(config) {
     // list of files / patterns to load in the browser
     files: [
       'js/*.js',
-      'html/*.html'
+      'html/*.html',
+      'node_modules/quixote/dist/*.js'
     ],
 
 
@@ -29,7 +30,8 @@ module.exports = function(config) {
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
-        'js/*.js': ['commonjs']
+        'js/*.js': ['commonjs'],
+        'node_modules/quixote/dist/*.js' : ['commonjs']
     },
 
     // test results reporter to use

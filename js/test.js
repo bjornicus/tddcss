@@ -1,5 +1,5 @@
 //require("../node_modules/quixote/dist/quixote.js")
-quixote = require("./quixote.js")
+quixote = require("../node_modules/quixote/dist/quixote.js")
 
 describe("A suite", function() {
     it("contains spec with an expectation", function() {
