@@ -10,15 +10,17 @@ module.exports = function(config) {
 
     // frameworks to use
     // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
-    frameworks: ['jasmine', 'commonjs'],
-    // frameworks: ['mocha', 'commonjs'],
+    // frameworks: ['jasmine', 'commonjs'],
+    frameworks: ['mocha', 'commonjs'],
 
 
     // list of files / patterns to load in the browser
     files: [
       'js/*.js',
       'html/*.html',
-      'node_modules/quixote/dist/*.js'
+      'css/*.css',
+      'node_modules/quixote/dist/*.js',
+      'node_modules/expect.js/*.js',
     ],
 
 
@@ -31,7 +33,8 @@ module.exports = function(config) {
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
         'js/*.js': ['commonjs'],
-        'node_modules/quixote/dist/*.js' : ['commonjs']
+        'node_modules/quixote/dist/*.js' : ['commonjs'],
+        'node_modules/expect.js/*.js' : ['commonjs'],
     },
 
     // test results reporter to use

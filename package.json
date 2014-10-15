@@ -3,18 +3,17 @@
   "version": "1.0.0",
   "description": "",
   "main": "karma.conf.js",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
-    "karma": "^0.12.24",
     "commonjs": "^0.0.1",
-    "karma-chrome-launcher": "^0.1.5",
+    "expect.js": "^0.3.1",
     "karma": "^0.12.24",
+    "karma-chrome-launcher": "^0.1.5",
     "karma-commonjs": "^0.0.12",
-    "karma-jasmine": "^0.1.5",
+    "karma-mocha": "^0.1.9",
     "karma-phantomjs-launcher": "^0.1.4",
-    "quixote": "^0.1.0",
-    "mocha": "^1.21.5"
+    "mocha": "^1.21.5",
+    "quixote": "^0.1.0"
   },
   "scripts": {
     "test": "mocha"
