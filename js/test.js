@@ -1,15 +1,15 @@
-//require("../node_modules/quixote/dist/quixote.js")
-quixote = require("../node_modules/quixote/dist/quixote.js")
+var quixote = require("../node_modules/quixote/dist/quixote.js");
 var expect = require('../node_modules/expect.js');
 
-describe("Example", function() {
+// based on the example in the quixote docs
+describe("My page", function() {
 
   var frame;        // Quixote test frame
   var sectionOne;         // the sectionOne element on the page
   var sectionTwo;         // the sectionTwo element
 
   // Create the test frame once for all your tests.
-  // Here we load example.html. You can also create elements programmatically.
+  // Here we load mypage.html. You can also create elements programmatically.
   before(function(done) {
     var options = { src: "/base/html/mypage.html" };
     frame = quixote.createFrame(options, done);
@@ -31,7 +31,7 @@ describe("Example", function() {
   });
 
   // Here's our test.
-  it("positions sectionTwo below sectionOne", function() {
+  it("positions section two below section one", function() {
     // The 'assert()' method checks multiple properties at once.
     // You can also use 'diff()' with your favorite assertion library.
     sectionTwo.assert({
@@ -43,7 +43,7 @@ describe("Example", function() {
     });
   });
 
-  it("uses big font for sectionTwo", function() {
+  it("uses big font for section two", function() {
     // Sometimes, 'assert()' doesn't support what you need.
     // But you can check any CSS style you want by using 'getRawStyle()'.
 
@@ -51,7 +51,7 @@ describe("Example", function() {
     var fontSize = sectionTwo.getRawStyle("font-size");  
 
     // Use your preferred assertion library (such as Chai) to make assertions.
-    expect(fontSize).to.be("16px");
+    expect(fontSize).to.be("18px");
   });
 
 });
