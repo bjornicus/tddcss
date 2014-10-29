@@ -1,5 +1,17 @@
+body{
+	margin: 0;
+}
 
 div {
 	position: absolute;
 	top: 25px;
 }
+
+[data-section] {
+	margin-left: 15px;
+}
+
+[data-section~="two"] {
+	margin-top: 10px;
+}
+
