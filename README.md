@@ -6,7 +6,7 @@ skeleton project using Quixote, Mocha, and Karma
 Getting Started
 ===============
 
-clone the projet then:
+* git clone https://github.com/bjornicus/tddcss.git
 * npm install
 * startKarma.cmd
 
