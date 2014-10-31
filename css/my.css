@@ -4,3 +4,20 @@
   padding: 3px 0; 
   display: block;
 }
+
+@media all and (max-width: 1000px) and (min-width: 700px) {
+  #sidebar ul li a:before {
+    content: "Email: ";
+    font-style: italic;
+    color: #666;
+  }
+}
+
+@media all and (min-width: 1000px){
+  #sidebar ul li a:after {
+    content: " (" attr(data-email) ")";
+    font-size: 11px;
+    font-style: italic;
+    color: #666;
+  }
+}
